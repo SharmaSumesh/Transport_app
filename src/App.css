@@ -1,33 +1,105 @@
-.App {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
+form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 500px;
 }
-
-.form-group {
-  margin-bottom: 15px;
-}
-
 label {
   display: block;
   margin-bottom: 5px;
-  font-weight: bold;
 }
-
 input {
   width: 100%;
   padding: 8px;
-  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+}
+button:hover {
+  background-color: #45a049;
+}
+h2 {
+  margin-top: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  form {
+    width: 500px;
+  }
+}
+
+/* Add some color changes */
+
+h2 {
+  color: #4caf50;
 }
 
 button {
   background-color: #4caf50;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
+  color: white;
 }
 
 button:hover {
   background-color: #45a049;
+}
+
+/* Add some animation */
+
+form {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*NavBar*/
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar a:hover {
+  color: #4caf50;
 }
